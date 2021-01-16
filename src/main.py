@@ -14,7 +14,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     
-	await bot.process_commands(message)
+    await bot.process_commands(message)
     await message.channel.purge(limit=None, check=lambda msg: not msg.pinned)
 
 
